@@ -58,13 +58,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let username = AppSessionManager.getUsername(), let password = AppSessionManager.getAuthPassword() {
             
             if username.isEmpty || password.isEmpty {
-                self.initViewController(storyBoardName: "Login", controllerName: "Login")
+                self.initViewController(storyBoardName: "Login", controllerName: "MainNavVC")
             } else {
                 self.initViewController(storyBoardName: "Dashboard", controllerName: "DashboardTabVC")
             }
             
         } else {
-            self.initViewController(storyBoardName: "Login", controllerName: "LoginVC")
+            self.initViewController(storyBoardName: "Login", controllerName: "MainNavVC")
         }
     }
 

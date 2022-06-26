@@ -37,9 +37,7 @@ class LoginVC: UIViewController {
     //MARK: - Custom Methods
     func setupUI() {
         btnLogin.layer.cornerRadius = 24
-        let tap = UITapGestureRecognizer(target: self, action: #selector(LoginVC.signupTap))
-        lblSignup.isUserInteractionEnabled = true
-        lblSignup.addGestureRecognizer(tap)
+        
     }
     
     func userLogin() {
@@ -56,7 +54,7 @@ class LoginVC: UIViewController {
         }
     }
     
-    @objc func signupTap(sender: UITapGestureRecognizer) {
+    @IBAction func signupBtnTap(_ sender: Any) {
         self.performSegue(withIdentifier: Constant.SIGNUP_SEGUE, sender: nil)
     }
 }

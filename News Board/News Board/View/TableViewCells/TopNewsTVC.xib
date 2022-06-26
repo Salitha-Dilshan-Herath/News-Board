@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NewYorkSmallSemibold.otf">
+            <string>NewYorkSmall-Semibold</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="top_news" rowHeight="128" id="KGk-i7-Jjw" customClass="TopNewsTVC" customModule="News_Board" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d32-Lx-xPq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-kA-cIX">
+                        <rect key="frame" x="1" y="1" width="318" height="124"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-ge-211">
+                        <rect key="frame" x="5" y="103" width="310" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUj-fO-SkI">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-BE-81i">
+                                <rect key="frame" x="310" y="0.0" width="0.0" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uoJ-BE-81i" firstAttribute="top" secondItem="A2Q-ge-211" secondAttribute="top" id="2Ap-1g-emX"/>
+                            <constraint firstItem="xUj-fO-SkI" firstAttribute="leading" secondItem="A2Q-ge-211" secondAttribute="leading" id="B5P-bj-kAK"/>
+                            <constraint firstItem="xUj-fO-SkI" firstAttribute="top" secondItem="A2Q-ge-211" secondAttribute="top" id="CBr-an-t6Y"/>
+                            <constraint firstAttribute="bottom" secondItem="uoJ-BE-81i" secondAttribute="bottom" id="Kz4-sQ-qcr"/>
+                            <constraint firstAttribute="trailing" secondItem="uoJ-BE-81i" secondAttribute="trailing" id="RtD-IA-djZ"/>
+                            <constraint firstAttribute="height" constant="20" id="le1-74-xnC"/>
+                            <constraint firstAttribute="bottom" secondItem="xUj-fO-SkI" secondAttribute="bottom" id="umH-lA-HL5"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uck-AH-CM7">
+                        <rect key="frame" x="10" y="10" width="300" height="0.0"/>
+                        <fontDescription key="fontDescription" name="NewYorkSmall-Semibold" family="New York Small" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5tm-kA-cIX" secondAttribute="trailing" constant="1" id="1h3-Pn-0H8"/>
+                    <constraint firstItem="A2Q-ge-211" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="3AC-tE-MaM"/>
+                    <constraint firstAttribute="bottom" secondItem="A2Q-ge-211" secondAttribute="bottom" constant="5" id="ASB-4A-o07"/>
+                    <constraint firstAttribute="trailing" secondItem="Uck-AH-CM7" secondAttribute="trailing" constant="10" id="DIS-WL-fXC"/>
+                    <constraint firstAttribute="bottom" secondItem="d32-Lx-xPq" secondAttribute="bottom" id="EsY-NI-p3z"/>
+                    <constraint firstAttribute="trailing" secondItem="d32-Lx-xPq" secondAttribute="trailing" id="F4Q-RB-C0W"/>
+                    <constraint firstAttribute="trailing" secondItem="A2Q-ge-211" secondAttribute="trailing" constant="5" id="ZUG-JC-Grr"/>
+                    <constraint firstItem="d32-Lx-xPq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ar7-yg-w1Q"/>
+                    <constraint firstAttribute="bottom" secondItem="5tm-kA-cIX" secondAttribute="bottom" constant="3" id="cNe-Eu-5Lh"/>
+                    <constraint firstItem="d32-Lx-xPq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iJT-Nm-4v4"/>
+                    <constraint firstItem="5tm-kA-cIX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="kGd-SO-eaH"/>
+                    <constraint firstItem="5tm-kA-cIX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="ncR-RP-eOi"/>
+                    <constraint firstItem="Uck-AH-CM7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ssF-LB-BPc"/>
+                    <constraint firstItem="Uck-AH-CM7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="z2b-kr-hjQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgBanner" destination="5tm-kA-cIX" id="bhf-Hx-bOr"/>
+                <outlet property="lblAuthor" destination="xUj-fO-SkI" id="shL-Yg-6PI"/>
+                <outlet property="lblDate" destination="uoJ-BE-81i" id="H3A-1D-u7m"/>
+                <outlet property="lblTitle" destination="Uck-AH-CM7" id="Zyo-vf-HEY"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="157.36607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -56,7 +56,7 @@ class SignupVC: UIViewController {
             
             
         } else {
-            
+            self.progressHUD.hide()
             Alert.showMessage(msg: error, on: self)
         }
         

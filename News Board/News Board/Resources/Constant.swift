@@ -10,14 +10,18 @@ import Foundation
 struct Constant {
     
     //MARK: -  Server URL
-    public static var API_BASE_URL =  "https://api.themoviedb.org/3/"
-    public static var RESOURCE_BASE_URL = "https://image.tmdb.org/t/p/original"
-    
+    public static var API_BASE_URL =  "https://newsapi.org/v2/"
+
     //MARK: - Keys
-    public static var MOVIE_API_KEY = "0e7274f05c36db12cbe71d9ab0393d47"
+    public static var NEWS_API_KEY = "496d1750621543f29cbc3367f63fbbf3"
+    
+    //MARK: - News Categories
+    public static var NEWS_CATEGORIES = ["Sports","General", "Business", "Entertainment", "Science", "Technology"]
     
     //MARK: - Table Cell Identifier
-    public static var MOVIE_TABLE_CELL = "MovieTVC"
+    public static var TOP_NEWS_TABLE_CELL = "top_news"
+    public static var LATEST_NEWS_COLLECTION_VIEW_CELL = "hot_news"
+    public static var NEWS_CATEGORY_COLLECTION_VIEW_CELL = "category"
     
     //MARK: - Navigation Titiles
     public static var NOW_PLAYING_TITLE = "Now Playing"
@@ -36,4 +40,6 @@ struct Constant {
     //MARK: - Error Alerts
     static let USER_LOGGIN_FAIL = "Invalid username or password"
 
+    
+    
 }
