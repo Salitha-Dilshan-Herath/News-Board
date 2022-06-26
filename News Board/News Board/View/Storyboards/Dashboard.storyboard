@@ -290,11 +290,28 @@
                         <outlet property="clvCategory" destination="eGf-Gc-9gS" id="7av-Rc-AFg"/>
                         <outlet property="clvLatestNews" destination="iwN-9Y-btY" id="OZk-v5-eFH"/>
                         <outlet property="tblTopNews" destination="7qH-fb-tVs" id="dmz-Gw-qo5"/>
+                        <segue destination="sSE-3F-t5f" kind="show" identifier="NewsList" id="5c5-bP-IyQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiV-JM-X3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-939.13043478260875" y="851.78571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BTN-zc-oaa">
+            <objects>
+                <viewController id="sSE-3F-t5f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LXE-bV-As8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4IL-uV-EON"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LAd-WU-nnO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojp-3h-wFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-939" y="1576"/>
         </scene>
         <!--Dashboard TabVC-->
         <scene sceneID="iCa-FX-hVp">

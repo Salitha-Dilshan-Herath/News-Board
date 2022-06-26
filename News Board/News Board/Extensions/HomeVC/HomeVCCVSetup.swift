@@ -71,9 +71,10 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             if let cell = collectionView.cellForItem(at: indexPath) as? NewsCategoryCVC {
                 selectedIndexPath = indexPath
                 cell.isSelected(value: true)
+                self.topArticles.removeAll()
                 
                 DispatchQueue.main.async {
-                    self.loadTopNews()
+                    self.loadTopNews(isRest: true)
                 }
             }
         }

@@ -54,7 +54,7 @@ class HomeVC: UIViewController {
                     
                     
                     
-                    self.loadTopNews()
+                    self.loadTopNews(isRest: true)
                 }
                 
             case .failure(let error):
@@ -64,14 +64,14 @@ class HomeVC: UIViewController {
         }
     }
     
-    func loadTopNews() {
+    func loadTopNews(isRest: Bool) {
         
         
         self.progressHUD.show()
         
         let selected_category = Constant.NEWS_CATEGORIES[self.selectedIndexPath?.row ?? 0]
         
-        viewModel.loadTopHeadLines(category: selected_category, country: "us", isRest: true) { result in
+        viewModel.loadTopHeadLines(category: selected_category, country: "us", isRest: isRest) { result in
             
             self.progressHUD.hide()
             
@@ -80,7 +80,7 @@ class HomeVC: UIViewController {
             case .success(let list):
                 
                 DispatchQueue.main.async {
-                    self.topArticles = list
+                    self.topArticles.append(contentsOf: list)
                     self.tblTopNews.reloadData()
                 }
                 
@@ -90,29 +90,4 @@ class HomeVC: UIViewController {
             }
         }
     }
-}
-
-extension HomeVC: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.topArticles.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constant.TOP_NEWS_TABLE_CELL, for: indexPath) as! TopNewsTVC
-        
-        let data = self.topArticles[indexPath.row]
-        
-        cell.setupUI(article: data)
-        
-        cell.selectionStyle = .none
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 128
-    }
-    
 }

@@ -22,6 +22,8 @@ class HomeViewModel {
         
         if !isRest {
             page += 1
+        } else {
+            page = 1
         }
         
         if totalPages != 0 && totalPages < page  {
