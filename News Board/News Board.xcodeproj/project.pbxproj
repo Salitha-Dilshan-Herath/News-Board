@@ -15,6 +15,15 @@
 		E57DF7A92866D8CB00375FDA /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E57DF7A32866D8CB00375FDA /* Nunito-Light.ttf */; };
 		E57DF7AA2866D8CB00375FDA /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E57DF7A42866D8CB00375FDA /* Nunito-Bold.ttf */; };
 		E57DF7AB2866D8CB00375FDA /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E57DF7A52866D8CB00375FDA /* Nunito-ExtraBold.ttf */; };
+		E57DF7AF28675A1900375FDA /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57DF7AE28675A1900375FDA /* Dashboard.storyboard */; };
+		E57DF7B128676F5200375FDA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DF7B028676F5200375FDA /* Constant.swift */; };
+		E59A02AB286776E900F87FAF /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02AA286776E900F87FAF /* SignupVC.swift */; };
+		E59A02AD2868138F00F87FAF /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02AC2868138F00F87FAF /* SignupViewModel.swift */; };
+		E59A02B02868191400F87FAF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02AF2868191400F87FAF /* Alert.swift */; };
+		E59A02B428681ABA00F87FAF /* AppSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02B328681ABA00F87FAF /* AppSessionManager.swift */; };
+		E59A02B628681DAF00F87FAF /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02B528681DAF00F87FAF /* ProgressView.swift */; };
+		E59A02B828681F9200F87FAF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02B728681F9200F87FAF /* LoginViewModel.swift */; };
+		E59A02BC286823AC00F87FAF /* DashboardTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59A02BB286823AC00F87FAF /* DashboardTabVC.swift */; };
 		E5D236472865FCDC00EB649B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D236462865FCDC00EB649B /* AppDelegate.swift */; };
 		E5D236492865FCDC00EB649B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D236482865FCDC00EB649B /* SceneDelegate.swift */; };
 		E5D2364B2865FCDC00EB649B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D2364A2865FCDC00EB649B /* LoginVC.swift */; };
@@ -33,6 +42,15 @@
 		E57DF7A32866D8CB00375FDA /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		E57DF7A42866D8CB00375FDA /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		E57DF7A52866D8CB00375FDA /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E57DF7AE28675A1900375FDA /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		E57DF7B028676F5200375FDA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E59A02AA286776E900F87FAF /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		E59A02AC2868138F00F87FAF /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		E59A02AF2868191400F87FAF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		E59A02B328681ABA00F87FAF /* AppSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSessionManager.swift; sourceTree = "<group>"; };
+		E59A02B528681DAF00F87FAF /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		E59A02B728681F9200F87FAF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E59A02BB286823AC00F87FAF /* DashboardTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabVC.swift; sourceTree = "<group>"; };
 		E5D236432865FCDC00EB649B /* News Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D236462865FCDC00EB649B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D236482865FCDC00EB649B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +88,16 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		E59A02AE2868190300F87FAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E59A02AF2868191400F87FAF /* Alert.swift */,
+				E59A02B328681ABA00F87FAF /* AppSessionManager.swift */,
+				E59A02B528681DAF00F87FAF /* ProgressView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E5D2363A2865FCDC00EB649B = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +117,7 @@
 		E5D236452865FCDC00EB649B /* News Board */ = {
 			isa = PBXGroup;
 			children = (
+				E59A02AE2868190300F87FAF /* Extensions */,
 				E5D236612866C54200EB649B /* ViewModel */,
 				E5D236602866C53100EB649B /* Resources */,
 				E5D2365E2866C3B600EB649B /* View */,
@@ -113,6 +142,8 @@
 			children = (
 				E5D2365F2866C3D400EB649B /* Storyboards */,
 				E5D2364A2865FCDC00EB649B /* LoginVC.swift */,
+				E59A02AA286776E900F87FAF /* SignupVC.swift */,
+				E59A02BB286823AC00F87FAF /* DashboardTabVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +153,7 @@
 			children = (
 				E5D2364C2865FCDC00EB649B /* Login.storyboard */,
 				E5D236542865FCE100EB649B /* LaunchScreen.storyboard */,
+				E57DF7AE28675A1900375FDA /* Dashboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -131,6 +163,7 @@
 			children = (
 				E57DF79B2866D5B000375FDA /* Font */,
 				E5D236522865FCE100EB649B /* Assets.xcassets */,
+				E57DF7B028676F5200375FDA /* Constant.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -138,6 +171,8 @@
 		E5D236612866C54200EB649B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E59A02AC2868138F00F87FAF /* SignupViewModel.swift */,
+				E59A02B728681F9200F87FAF /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +242,7 @@
 				E57DF7A82866D8CB00375FDA /* Nunito-Regular.ttf in Resources */,
 				E5D236562865FCE100EB649B /* LaunchScreen.storyboard in Resources */,
 				E5D236532865FCE100EB649B /* Assets.xcassets in Resources */,
+				E57DF7AF28675A1900375FDA /* Dashboard.storyboard in Resources */,
 				E57DF7AA2866D8CB00375FDA /* Nunito-Bold.ttf in Resources */,
 				E57DF79E2866D7F100375FDA /* NewYorkSmallSemibold.otf in Resources */,
 				E5D2364E2865FCDC00EB649B /* Login.storyboard in Resources */,
@@ -221,10 +257,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59A02AB286776E900F87FAF /* SignupVC.swift in Sources */,
 				E5D2364B2865FCDC00EB649B /* LoginVC.swift in Sources */,
+				E59A02B828681F9200F87FAF /* LoginViewModel.swift in Sources */,
+				E59A02B428681ABA00F87FAF /* AppSessionManager.swift in Sources */,
 				E5D236472865FCDC00EB649B /* AppDelegate.swift in Sources */,
+				E57DF7B128676F5200375FDA /* Constant.swift in Sources */,
 				E5D236492865FCDC00EB649B /* SceneDelegate.swift in Sources */,
 				E5D236512865FCDC00EB649B /* News_Board.xcdatamodeld in Sources */,
+				E59A02B628681DAF00F87FAF /* ProgressView.swift in Sources */,
+				E59A02B02868191400F87FAF /* Alert.swift in Sources */,
+				E59A02AD2868138F00F87FAF /* SignupViewModel.swift in Sources */,
+				E59A02BC286823AC00F87FAF /* DashboardTabVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +415,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2UK229YUS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "News Board/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,7 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2UK229YUS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "News Board/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
